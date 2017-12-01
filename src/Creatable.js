@@ -33,7 +33,7 @@ class CreatableSelect extends React.Component {
 				if (onNewOptionClick) {
 					onNewOptionClick(option);
 				} else {
-					options.unshift(option);
+					options.push(option);
 
 					this.select.selectValue(option);
 				}
@@ -76,7 +76,7 @@ class CreatableSelect extends React.Component {
 					valueKey: this.valueKey
 				});
 
-				filteredOptions.unshift(this._createPlaceholderOption);
+				filteredOptions.push(this._createPlaceholderOption);
 			}
 		}
 
