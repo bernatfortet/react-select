@@ -136,6 +136,11 @@ export default class Async extends Component {
 		}
 	}
 
+	onOpen(){
+		console.log(`optionComponent`)
+		this.loadOptions('c');
+	}
+
 	onInputChange (inputValue) {
 		const { ignoreAccents, ignoreCase, onInputChange } = this.props;
 		let newInputValue = inputValue;
@@ -197,7 +202,8 @@ export default class Async extends Component {
 			...this.props,
 			...props,
 			isLoading,
-			onInputChange: this.onInputChange
+			onInputChange: this.onInputChange,
+			onOpen: this.onOpen.bind(this),
 		});
 	}
 }
