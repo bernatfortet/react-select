@@ -137,7 +137,6 @@ export default class Async extends Component {
 	}
 
 	onOpen(){
-		console.log(`optionComponent`)
 		this.loadOptions('');
 	}
 
