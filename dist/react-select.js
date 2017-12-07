@@ -2077,7 +2077,6 @@ var Async = function (_Component) {
 	}, {
 		key: 'onOpen',
 		value: function onOpen() {
-			console.log('optionComponent');
 			this.loadOptions('');
 		}
 	}, {
